@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="header">
+            <input type="text" id="username" placeholder="Enter your name">
+            <button id="start-btn">Start Game</button>
+            <div class="mode-buttons">
+                <button id="light-mode">Light Mode</button>
+                <button id="dark-mode">Dark Mode</button>
+            </div>
+            <span id="user-name"></span>
+            <div class="stats">
+                <span>Time: <span id="timer">0</span> seconds</span>
+                <span>Games Played: <span id="play-count">0</span></span>
+                <span>Steps: <span id="step-count">0</span></span>
+            </div>
+        </div>
+
+        <canvas id="maze-canvas" width="400" height="400"></canvas>
+    </div>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
